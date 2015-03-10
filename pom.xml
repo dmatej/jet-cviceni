@@ -7,5 +7,24 @@
   <packaging>pom</packaging>
   <name>Main POM</name>
 
+  <organization>
+    <name>FAV-ZČU</name>
+    <url>http://www.kiv.zcu.cz/</url>
+  </organization>
+  <scm>
+    <url>scm:git:ssh://kiv.zcu.cz/jet</url>
+  </scm>
 
+  <repositories>
+    <repository>
+      <id>JET-local</id>
+      <url>file:///repo/git/jet/localMavenRepo</url>
+      <releases>
+        <enabled>true</enabled>
+      </releases>
+      <snapshots>
+        <enabled>true</enabled>
+      </snapshots>
+    </repository>
+  </repositories>
 </project>
