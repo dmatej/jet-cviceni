@@ -34,5 +34,9 @@ public class CollectionUtilsTest {
     assertNotNull("null", sorted);
     assertEquals("sorted.size", 4, sorted.size());
     assertEquals("sorted[0]", null, sorted.get(0));
+    assertEquals("sorted[1]", "ČOČKA", sorted.get(1));
+    assertEquals("sorted[2]", "matějček", sorted.get(2));
+    assertEquals("sorted[3]", "řízeček", sorted.get(3));
+    assertEquals("sorted.hashcode and names.hashcode", names.hashCode(), sorted.hashCode());
   }
 }
