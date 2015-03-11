@@ -10,9 +10,21 @@ import java.util.stream.Collectors;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
+
+/**
+ * Utilities to simplify a work with collections.
+ *
+ * @author David Matějček
+ */
 public class CollectionUtils {
   private static final Logger LOG = LoggerFactory.getLogger(CollectionUtils.class);
 
+  /**
+   * Czech case insensitive null-safe sort.
+   *
+   * @param words
+   * @return new sorted list
+   */
   public static List<String> sort(final Collection<String> words) {
     LOG.debug("sort(words={})", words);
     if (words == null) {
