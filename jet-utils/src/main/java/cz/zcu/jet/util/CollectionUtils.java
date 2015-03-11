@@ -1,7 +1,9 @@
 package cz.zcu.jet.util;
 
+import java.text.Collator;
 import java.util.Collection;
 import java.util.List;
+import java.util.Locale;
 import java.util.Objects;
 import java.util.stream.Collectors;
 
@@ -16,8 +18,9 @@ public class CollectionUtils {
     if (words == null) {
       return null;
     }
+    final Collator collator = Collator.getInstance(new Locale("cs", "CZ"));
     return words.stream()
-        .sorted((a, b) -> Objects.toString(a, "").compareToIgnoreCase(Objects.toString(b, "")))
+        .sorted((a, b) -> collator.compare(Objects.toString(a, ""), Objects.toString(b, "")))
         .collect(Collectors.toList());
   }
 
