@@ -15,6 +15,10 @@
     <url>scm:git:ssh://kiv.zcu.cz/jet</url>
   </scm>
 
+  <prerequisites>
+    <maven>3.2.5</maven>
+  </prerequisites>
+
   <repositories>
     <repository>
       <id>JET-local</id>
