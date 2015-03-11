@@ -15,7 +15,7 @@ public class CollectionUtils {
     if (words == null) {
       return null;
     }
-    return words.stream().sorted((a, b) -> a.compareToIgnoreCase(b)).collect(Collectors.toList());
+    return words.stream().sorted((a, b) -> a == null ? 1 : a.compareToIgnoreCase(b)).collect(Collectors.toList());
   }
 
 }
