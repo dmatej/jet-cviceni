@@ -3,7 +3,7 @@
   <modelVersion>4.0.0</modelVersion>
   <artifactId>jet-utils</artifactId>
   <packaging>jar</packaging>
-  <name>Main POM</name>
+  <name>Utilities</name>
 
   <parent>
     <groupId>cz.zcu.jet</groupId>
