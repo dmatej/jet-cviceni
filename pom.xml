@@ -18,6 +18,7 @@
   <modules>
     <module>jet-utils</module>
     <module>jet-webservice</module>
+    <module>jet-ear</module>
   </modules>
 
   <prerequisites>
